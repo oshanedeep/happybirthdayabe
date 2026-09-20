@@ -1,34 +1,173 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 <head>
-    <title>Abe Name Checker</title>
-</head>
-<body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 ```
-<h1>Name Checker</h1>
+<title>Happy Birthday, Abe!</title>
 
-<label>Enter your name:</label>
-<input type="text" id="name">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #ffe6f2;
+        text-align: center;
+        padding: 40px;
+    }
+
+    .container {
+        max-width: 600px;
+        margin: auto;
+        background: white;
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    }
+
+    h1 {
+        color: #ff4f9a;
+    }
+
+    input {
+        padding: 12px;
+        width: 70%;
+        border: 2px solid #ff9ac2;
+        border-radius: 10px;
+        font-size: 16px;
+    }
+
+    button {
+        margin-top: 15px;
+        padding: 12px 25px;
+        border: none;
+        border-radius: 10px;
+        background: #ff69a6;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: #ff4089;
+    }
+
+    #message {
+        margin-top: 25px;
+        text-align: left;
+        line-height: 1.7;
+    }
+
+    .birthday {
+        color: #ff4f9a;
+        font-size: 28px;
+        text-align: center;
+    }
+</style>
+```
+
+</head>
+
+<body>
+
+<div class="container">
+
+```
+<h1>🎂 A Little Birthday Surprise 🎂</h1>
+
+<p>Enter your name:</p>
+
+<input type="text" id="nameInput" placeholder="Enter your name">
+
+<br>
 
 <button onclick="checkName()">Submit</button>
 
-<p id="message"></p>
+<div id="message"></div>
+```
+
+</div>
 
 <script>
-    function checkName() {
-        let name = document.getElementById("name").value;
 
-        if (name === "Abe") {
-            document.getElementById("message").textContent = "Hi, Abe!";
-        } else {
-            document.getElementById("message").textContent =
-                "That's not Abe. Try again!";
-        }
+function checkName() {
+
+    let name = document.getElementById("nameInput").value;
+
+    if (name === "Abe") {
+
+        document.getElementById("message").innerHTML = `
+
+            <p class="birthday">
+                🎉 Hi, Abe! 🎉
+            </p>
+
+            <p>
+                Happy Happy Blessed birthdayyyy sa hev abe ng bohai
+                naming walo UwU &lt;- yan nalang
+            </p>
+
+            <p>
+                kasi ayaw lumabas ng emojis dito sa compiler ko ng code
+                aywan ku bah!
+            </p>
+
+            <p>
+                so ayun na nga uh panu ba i2 huhu abe
+                iloveloveloveusm ewan ku bah bakit ka umiyak kanina
+            </p>
+
+            <p>
+                piru i am in the verge of crying na rin kasi
+                omeyak ka hanobayan!
+            </p>
+
+            <p>
+                college na ambebe na yan UwU HAHSAUHAHAHAH
+            </p>
+
+            <p>
+                di na rin u minor UwU
+            </p>
+
+            <p>
+                i hope things will get better on your side abe ku UwU
+            </p>
+
+            <p>
+                sana next joyride natin convoy na tayo sasakyan
+                HAHSAUSHAHAHAHA
+            </p>
+
+            <p>
+                sana rin if want mo magshift, matupad o masunod yun :))
+            </p>
+
+            <p>
+                hoping and praying that this friendship of ours will never end.
+                mahal na mahal kita abe happy blessed birthday ulit!
+            </p>
+
+            <p>
+                xenxia k na beh kung maikli tu pinapatulog n ak
+                realjet huhu goodnight!
+            </p>
+
+            <p style="text-align:center;">
+                💗🎂🎉🎈
+            </p>
+        `;
+
+    } else {
+
+        document.getElementById("message").innerHTML =
+            "<p>That's not Abe 😭 Try again!</p>";
+
     }
+
+}
+
 </script>
-```
 
 </body>
 </html>
